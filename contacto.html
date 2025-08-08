@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Araceli Moreno del Castillo</title>
+  <link rel="stylesheet" href="estilosjs2.css" />
+</head>
+<body>
+
+  <!-- Encabezado y Navegación -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Araceli Moreno del Castillo</h1>
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="contacto.html" class="activo">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Formulario de Contacto -->
+  <main class="formulario-container">
+    <h2>Contáctame</h2>
+    <form id="formulario-contacto" novalidate>
+      <div class="campo">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required />
+      </div>
+
+      <div class="campo">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required />
+      </div>
+
+      <div class="campo">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required />
+      </div>
+
+      <div class="campo">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+      </div>
+
+      <button type="submit">Enviar</button>
+      <p id="mensaje-error" class="error"></p>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Araceli Moreno del Castillo. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>

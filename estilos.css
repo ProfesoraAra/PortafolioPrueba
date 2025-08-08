@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef4fb;
+  color: #2c3e50;
+}
+
+/* Navegación */
+.navbar {
+  background-color: #1b3c78;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Carrusel */
+.carrusel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carrusel {
+  position: relative;
+}
+
+.carrusel-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* Botones carrusel */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(27, 60, 120, 0.8);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(27, 60, 120, 1);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Semblanza */
+.semblanza {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  border-top: 3px solid #1b3c78;
+}
+
+.semblanza h2 {
+  margin-bottom: 30px;
+  color: #1b3c78;
+  font-size: 2em;
+}
+
+.semblanza-contenido {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.foto-docente {
+  width: 250px;
+  border-radius: 10px;
+  border: 3px solid #1b3c78;
+}
+
+.semblanza p {
+  max-width: 600px;
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .semblanza-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .semblanza p {
+    text-align: justify;
+  }
+}
